@@ -30,7 +30,7 @@ body {
     
   }
   header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 22px;
   }
@@ -77,6 +77,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    align-items: flex-start;
   }
  
   /* Hero Style End */
@@ -100,6 +101,9 @@ body {
   
   .hero-form p {
     margin: 5px 0 15px 0;
+  }
+  .hero-cta {
+    line-height: 1.2px;
   }
   
   .form-input {
@@ -156,7 +160,7 @@ body {
     border-color: #39a6b2;
   }
   .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
@@ -285,3 +289,26 @@ body {
   }
   
   /* REACH OUT STYLES END */
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header h1 a {
+    /* this will be applied on any screen smaller than 980px */
+    color: tomato;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied on any screen smaller than 575px */
+    font-size: 100px;
+  }
+}
